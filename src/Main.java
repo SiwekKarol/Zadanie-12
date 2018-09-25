@@ -2,19 +2,13 @@ public class Main {
 
     public static void main(String[] args) {
 	int i = 0;
-	int suma = 0;
-	while (i < 101) {
-	   if (i % 2 != 0){
-	       suma += i;
-	       i += 2;
+	do {
+        System.out.println(i*2);
         i++;
-        continue;
-       }
-       System.out.println(i);
-	   i++;
-    }
+    } while (i < 51);
 
-        System.out.println("suma liczb parzystych z przedziału 0 --> 100 wynosi " + suma);
-
+	    int suma = i++;
+        System.out.println("Suma wszystkich powyższych liczb wynosi:");
+        
     }
 }
